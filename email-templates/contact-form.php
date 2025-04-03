@@ -2,49 +2,19 @@
 if( ! empty( $_POST['email'] ) ) {
 
 	// Enable / Disable SMTP
-	$enable_smtp = 'no'; // yes OR no
+	$enable_smtp = 'yes'; // yes OR no
 
 	// Email Receiver Address
-	$receiver_email = 'info@domain.com';
+	$receiver_email = 'marcelo.santos0799@gmail.com';
 
 	// Email Receiver Name for SMTP Email
-	$receiver_name 	= 'Your Name';
+	$receiver_name 	= 'Marcelo';
 
 	// Email Subject
 	$subject = 'Contact form details';
 
-	// Google reCaptcha secret Key
-	$grecaptcha_secret_key = 'YOUR_SECRET_KEY';
-
 	$from 	= $_POST['email'];
 	$name 	= isset( $_POST['name'] ) ? $_POST['name'] : '';
-
-	if( ! empty( $grecaptcha_secret_key ) && ! empty( $_POST['g-recaptcha-response'] ) ) {
-
-		$token = $_POST['g-recaptcha-response'];
-
-		// call curl to POST request
-		$ch = curl_init();
-		curl_setopt($ch, CURLOPT_URL,"https://www.google.com/recaptcha/api/siteverify");
-		curl_setopt($ch, CURLOPT_POST, 1);
-		curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query( array( 'secret' => $grecaptcha_secret_key, 'response' => $token ) ) );
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		$response = curl_exec($ch);
-		curl_close($ch);
-		$arrResponse = json_decode($response, true);
-
-		// verify the response
-		if( isset( $_POST['action'] ) && ! ( isset( $arrResponse['success'] ) && $arrResponse['success'] == '1' && $arrResponse['action'] == $_POST['action'] && $arrResponse['score'] = 0.5 ) ) {
-
-			echo '{ "alert": "alert-danger", "message": "Your message could not been sent due to invalid reCaptcha!" }';
-			die;
-
-		} else if( ! isset( $_POST['action'] ) && ! ( isset( $arrResponse['success'] ) && $arrResponse['success'] == '1' ) ) {
-
-			echo '{ "alert": "alert-danger", "message": "Your message could not been sent due to invalid reCaptcha!" }';
-			die;
-		}
-	}
 
 	if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 
@@ -98,6 +68,7 @@ if( ! empty( $_POST['email'] ) ) {
 				</table>
 			</body>
 			</html>';
+
 		if( $enable_smtp == 'no' ) { // Simple Email
 
 			// Always set content-type when sending HTML email
@@ -136,12 +107,12 @@ if( ! empty( $_POST['email'] ) ) {
 			$mail = new PHPMailer\PHPMailer\PHPMailer();
 
 			$mail->isSMTP();
-			$mail->Host     = 'YOUR_SMTP_HOST'; // Your SMTP Host
+			$mail->Host     = 'smtp.gmail.com'; // Your SMTP Host
 			$mail->SMTPAuth = true;
-			$mail->Username = 'YOUR_SMTP_USERNAME'; // Your Username
-			$mail->Password = 'YOUR_SMTP_PASSWORD'; // Your Password
-			$mail->SMTPSecure = 'ssl'; // Your Secure Connection
-			$mail->Port     = 465; // Your Port
+			$mail->Username = 'rendaextra.pt@gmail.com'; // Your Gmail Username
+			$mail->Password = 'dogl evfj ului thaj'; // Your App Password
+			$mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS; // Your Secure Connection
+			$mail->Port     = 587; // Your Port
 			$mail->setFrom( $fields['Email'], $fields['Name'] );
 			
 			foreach( $toemailaddresses as $toemailaddress ) {

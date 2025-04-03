@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
   <head>
-    <title>Skyline Racing - The Kart Academy</title>
+    <title>Grande Prémio - Cascais</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="ThemeZaa" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta
       name="description"
-      content="Elevate your online presence with Crafto - a modern, versatile, multipurpose Bootstrap 5 responsive HTML5, SCSS template using highly creative 48+ ready demos."
+      content="Prepara-te para um evento de alta adrenalina no Grande Prémio Cascais de Karts! Seja para competir ao mais alto nível ou simplesmente para te divertires com amigos, esta é a oportunidade perfeita para testares as tuas habilidades em pista e sentires a emoção da velocidade."
     />
     <!-- favicon icon -->
-    <link rel="shortcut icon" href="images2/logo.png" />
+    <link rel="shortcut icon" href="images2/logo1.png" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png" />
     <link
       rel="apple-touch-icon"
@@ -56,7 +56,52 @@
       type="text/javascript"
       src="revolution/js/extensions/revolution.extension.parallax.min.js"
     ></script>
-  </head>
+    
+   <style>
+	#snackbar {
+	  visibility: hidden;
+	  min-width: 250px;
+	  margin-left: -125px;
+	  background-color: green;
+	  color: #fff;
+	  text-align: center;
+	  border-radius: 30px;
+	  padding: 16px;
+	  position: fixed;
+	  z-index: 99999;
+	  left: 50%;
+	  right: 50%;
+	  top: 30px;
+	  font-size: 17px;
+	}
+	
+	#snackbar.show {
+	  visibility: visible;
+	  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+	  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+	}
+	
+	@-webkit-keyframes fadein {
+	  from {top: 0; opacity: 0;} 
+	  to {top: 30px; opacity: 1;}
+	}
+	
+	@keyframes fadein {
+	  from {top: 0; opacity: 0;}
+	  to {top: 30px; opacity: 1;}
+	}
+	
+	@-webkit-keyframes fadeout {
+	  from {top: 30px; opacity: 1;} 
+	  to {top: 0; opacity: 0;}
+	}
+	
+	@keyframes fadeout {
+	  from {top: 30px; opacity: 1;}
+	  to {top: 0; opacity: 0;}
+	}
+	</style>
+</head>
   <body data-mobile-nav-style="classic">
     <!-- start header -->
     <header>
@@ -68,9 +113,9 @@
         <div class="container-fluid">
           <div class="col-auto col-lg-2 me-lg-0 me-auto">
             <a class="navbar-brand section-link" href="#home">
-              <img src="images2/logo.png" alt="" class="default-logo" />
-              <img src="images2/logo.png" alt="" class="alt-logo" />
-              <img src="images2/logo.png" alt="" class="mobile-logo" />
+              <img src="images2/logo1.png" alt="" class="default-logo" />
+              <img src="images2/logo1.png" alt="" class="alt-logo" />
+              <img src="images2/logo1.png" alt="" class="mobile-logo" />
             </a>
           </div>
           <div class="col-auto menu-order position-static">
@@ -90,17 +135,18 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a href="#overview" class="inner-link nav-link">Overview</a>
+                  <a href="index.html" class="inner-link nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#features" class="inner-link nav-link">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#design" class="inner-link nav-link">Gallery</a>
+                  <a href="organizacao.html" class="inner-link nav-link"
+                    >Organização</a
+                  >
                 </li>
 
                 <li class="nav-item">
-                  <a href="#pricing" class="inner-link nav-link">Pricing</a>
+                  <a href="regulamento.html" class="inner-link nav-link"
+                    >Regulamento Prova</a
+                  >
                 </li>
               </ul>
             </div>
@@ -109,15 +155,15 @@
             <div class="header-icon">
               <div class="header-button">
                 <a
-                  href="#pricing"
-                  class="btn btn-very-small left-icon btn-rounded btn-box-shadow btn-switch-text btn-red section-link"
+                  href="#contact-form"
+                  class="btn btn-very-small left-icon btn-rounded btn-box-shadow btn-switch-text btn-red popup-with-form"
                 >
                   <span>
                     <span class="d-none d-xl-inline-block"
-                      ><i class="bi bi-bag-check fs-16"></i
+                      ><i class="bi bi-pen fs-16"></i
                     ></span>
-                    <span class="btn-double-text" data-text="BOOK NOW"
-                      >BOOK NOW</span
+                    <span class="btn-double-text" data-text="INSCRIÇÕES"
+                      >INSCRIÇÕES</span
                     >
                   </span>
                 </a>
@@ -129,6 +175,7 @@
       <!-- end navigation -->
     </header>
     <!-- end header -->
+    <div id="snackbar">Enviado com sucesso,<br> responderemos o mais rápido possível!</div>
     <section
       id="home"
       class="p-0 ipad-top-space-margin"
@@ -179,9 +226,9 @@
                   style="
                     background: -webkit-linear-gradient(
                       0deg,
-                      #f53838 15%,
-                      #be1919 65%,
-                      #7b0101 100%
+                      #113933 15%,
+                      #145423 65%,
+                      #00770c 100%
                     );
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
@@ -189,12 +236,12 @@
                   id="slide-layer-1"
                   data-frames='[{"delay":2000,"speed":2000,"frame":"0","from":"sX:1.3;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                   data-visibility="['on', 'on', 'on', 'on']"
-                  data-fontsize="['346','250','200','120']"
+                  data-fontsize="['180','120','80','40']"
                   data-lineheight="['450','360','300','200']"
                   data-fontweight="['700','700', '700','700']"
                   data-color="['#FFF','#FFF', '#000', '#000']"
                   data-textAlign="['center','center','center','center']"
-                  data-letterspacing="['-24','-15','-10','-8']"
+                  data-letterspacing="['-8','-5','-2','1']"
                   data-x="['center','center','center','center']"
                   data-y="['-40px','-6px','-5px','25px']"
                   data-hoffset="['0','0','0','0']"
@@ -205,16 +252,16 @@
                   data-responsive_offset="off"
                   data-responsive="on"
                 >
-                  Skyline
+                  GRANDE PRÉMIO
                 </div>
                 <div
                   class="tp-caption tp-resizeme alt-font rs-parallaxlevel-2"
                   style="
                     background: -webkit-linear-gradient(
                       0deg,
-                      #7b0101 15%,
-                      #be1919 65%,
-                      #f53838 100%
+                      #00770c 15%,
+                      #145423 65%,
+                      #113933 100%
                     );
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
@@ -238,7 +285,7 @@
                   data-responsive_offset="off"
                   data-responsive="on"
                 >
-                  Racing
+                  CASCAIS
                 </div>
                 <!-- end large text layer -->
 
@@ -360,7 +407,7 @@
                   data-responsive="off"
                   data-basealign="grid"
                 >
-                  Became a
+                  31 Maio, Sábado
                 </div>
                 <!-- end subtitle layer -->
                 <!-- sliding text -->
@@ -384,7 +431,7 @@
                   data-frames='[{"delay":2500,"speed":2000,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:[-100%];y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},
                                      {"delay":640,"speed":600,"to":"y:30px;rX:45deg;sX:0.8;sY:0.8;opacity:0;","ease":"Power2.easeInOut"}]'
                 >
-                  Kart Driver
+                  Corrida Empresas
                 </div>
                 <!-- sliding text -->
                 <div
@@ -406,7 +453,7 @@
                   data-responsive="off"
                   data-frames='[{"delay":5000,"speed":2000,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:[-100%];y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"}]'
                 >
-                  Professional Driver
+                  Corrida Empresas
                 </div>
                 <!-- sliding text -->
                 <!-- start subtitle layer -->
@@ -433,7 +480,7 @@
                   data-responsive="off"
                   data-basealign="grid"
                 >
-                  Experience
+                  1 Junho, Domingo
                 </div>
                 <!-- end subtitle layer -->
                 <!-- sliding text -->
@@ -456,7 +503,7 @@
                   data-responsive="off"
                   data-frames='[{"delay":2500,"speed":2000,"frame":"0","from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:[100%];y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":660,"speed":600,"to":"y:30px;rX:45deg;sX:0.8;sY:0.8;opacity:0;","ease":"Power2.easeInOut"}]'
                 >
-                  The best tracks
+                  Experiência em Pista
                 </div>
                 <!-- sliding text -->
                 <div
@@ -478,7 +525,7 @@
                   data-responsive="off"
                   data-frames='[{"delay":5000,"speed":2000,"frame":"0","from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:[100%];y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"}]'
                 >
-                  The Pure Adrenaline
+                  Experiência em Pista
                 </div>
               </li>
             </ul>
@@ -488,13 +535,13 @@
         </div>
       </article>
     </section>
-    <section class="p-0 bg-white position-relative redes" style=" z-index: -100;">
+    <!-- <section class="p-0 bg-white position-relative redes" style=" z-index: -100;">
       <div class="container">
         <div
           class="row row-cols-2 row-cols-lg-6 row-cols-sm-4 g-0 justify-content-center ps-5 pe-5"
           data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'
         >
-          <!-- start features box item -->
+           start features box item 
           <div class="col icon-with-text-style-03">
             <div class="feature-box">
               <div class="feature-box-icon">
@@ -514,12 +561,12 @@
               </div>
             </div>
           </div>
-          <!-- end features box item -->
-          <!-- start features box item -->
+         end features box item 
+           start features box item 
           <div class="col icon-with-text-style-03">
             <div class="feature-box">
               <div class="feature-box-icon">
-                <a href="https://www.instagram.com/skylineracing.sa/" target="_blank"
+                <a href="https://www.instagram.com/manuelgiao/" target="_blank"
                   ><i
                     class="fa-brands fa-instagram icon-large text-dark-gray mb-10px"
                   ></i
@@ -527,7 +574,7 @@
               </div>
               <div class="feature-box-content last-paragraph-no-margin">
                 <a
-                  href="https://www.instagram.com/skylineracing.sa/"
+                  href="https://www.instagram.com/manuelgiao/"
                   target="_blank"
                   class="fs-13 ls-3px d-inline-block text-dark-gray text-uppercase"
                   >Instagram</a
@@ -535,191 +582,237 @@
               </div>
             </div>
           </div>
-          <!-- end features box item -->
+           end features box item 
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- start section -->
     <section
-      id="overview"
-      class="background-position-center-top position-relative"
-      style="background-image: url('images/vertical-line-bg-medium-gray.svg')"
+      class="background-position-center-top pt-0"
+      style="
+        background-image: url('images/vertical-line-bg-medium-gray.svg');
+        margin-top: -90px;
+        margin-bottom: -100px;
+      "
     >
-      <div
-        id="particles-01"
-        data-particle="true"
-        data-particle-options='{"particles": {"number": {"value": 3,"density": {"enable": true,"value_area": 1000}},"color":{"value":["#fc1111", "#fc4444"]},"shape": {"type": "triangle","stroke":{"width":0,"color":"#000000"}},"opacity": {"value": 0.7,"random": false,"anim": {"enable": false,"speed": 2,"sync": false}},"size": {"value": 7,"random": true,"anim": {"enable": false,"sync": true}},"move": {"enable": true,"speed":2,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'
-        class="position-absolute top-0px left-0px w-100 z-index-minus-1"
-      ></div>
-      <div class="container">
-        <!-- <div class="row justify-content-center align-items-center mb-5">
-                    <div class="col-12 text-center last-paragraph-no-margin" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 1200, "delay": 50, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                        <div class="text-center bg-golden-yellow text-white fs-16 lh-36 border-radius-30px d-inline-block ps-20px pe-20px align-middle me-10px"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-                        <span class="text-dark-gray fs-26 d-inline-block align-middle ls-minus-05px">The best rated headphone on <a href="https://www.amazon.com/" target="_blank" class="fw-700 text-decoration-line-bottom text-dark-gray text-dark-gray-hover">Amazon.com</a></span>
-                    </div>
-                </div> -->
-        <div class="row align-items-center mb-6 md-mb-10">
+      <div class="container-fluid">
+        <div class="row position-relative">
           <div
-            class="col-md-6 position-relative sm-mb-30px"
-            data-anime='{ "translateX": [-50, 0], "opacity": [0,1], "duration": 1500, "delay": 100, "staggervalue": 150, "easing": "easeOutQuad" }'
+            class="col swiper swiper-width-auto text-center pb-20px md-pb-20px feather-shadow"
+            data-slider-options='{ "slidesPerView": "auto", "spaceBetween":70, "speed": 14000, "loop": true, "allowTouchMove": false, "autoplay": { "delay":0, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'
           >
-            <div class="outside-box-left-20 lg-outside-box-left-30">
-              <img src="images2/best.jpg" alt="" style="border-radius: 10%" />
-            </div>
-          </div>
-          <div
-            class="col-md-6 ps-5 md-ps-15px"
-            data-anime='{ "el": "childs", "translateX": [50, 0], "opacity": [0,1], "duration": 1000, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'
-          >
-            <!-- <i class="line-icon-Hipster-Headphones align-middle icon-double-large mb-30px md-mb-20px opacity-6"></i> -->
-            <h1
-              class="fw-800 ls-minus-3px text-dark-gray mb-30px fancy-text-style-4"
-            >
-              Be the
-              <span
-                data-fancy-text='{ "effect": "wave", "string": ["best", "fastest"], "duration": 4000  }'
-              >
-              </span>
-              <br />
-              learn with the <span style="color: #d61d1d">best</span>.
-            </h1>
-            <!-- <p class="w-90 lg-w-100 mb-35px">We graduate experienced drivers to be the best in the field.</p>    -->
-            <a
-              href="#pricing"
-              class="btn btn-large btn-dark-gray btn-hover-animation-switch btn-box-shadow btn-round-edge section-link"
-            >
-              <span>
-                <span class="btn-text">BOOK NOW</span>
-                <span class="btn-icon"
-                  ><i class="feather icon-feather-arrow-right"></i
-                ></span>
-                <span class="btn-icon"
-                  ><i class="feather icon-feather-arrow-right"></i
-                ></span>
-              </span>
-            </a>
-          </div>
-        </div>
-        <div
-          class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center"
-          data-anime='{ "el": "childs", "rotateZ": [5, 0], "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'
-        >
-          <!-- start process step item -->
-          <div
-            class="col process-step-style-05 position-relative hover-box md-mb-30px"
-          >
-            <div class="process-step-item d-flex align-items-center">
-              <div class="process-step-icon-wrap position-relative">
-                <div
-                  class="process-step-icon d-flex justify-content-center align-items-center mx-auto rounded-circle h-90px w-90px bg-white fs-22 box-shadow-medium-bottom fw-600 position-relative"
-                >
-                  <span
-                    class="number position-relative z-index-1 text-dark-gray"
-                    >01</span
-                  >
-                  <div class="box-overlay bg-dark-gray rounded-circle"></div>
+            <div class="swiper-wrapper marquee-slide">
+              <!-- start client item -->
+              <div class="swiper-slide">
+                <div class="fs-90 text-dark-gray fw-700 ls-minus-4px alt-font">
+                  Prepare-se para acelarar.
                 </div>
               </div>
-              <div class="process-content ps-25px">
-                <span
-                  class="d-block fw-500 text-dark-gray fs-22 lh-30 ls-minus-05px w-60 xl-w-90"
-                  >Accelerate your skills <strong>with us</strong></span
-                >
-              </div>
-            </div>
-          </div>
-          <!-- end process step item -->
-          <!-- start process step item -->
-          <div
-            class="col process-step-style-05 position-relative hover-box md-mb-30px"
-          >
-            <div class="process-step-item d-flex align-items-center">
-              <div class="process-step-icon-wrap position-relative">
+              <!-- end client item -->
+              <!-- start client item -->
+              <div class="swiper-slide">
                 <div
-                  class="process-step-icon d-flex justify-content-center align-items-center mx-auto rounded-circle h-90px w-90px bg-white fs-22 box-shadow-medium-bottom fw-600 position-relative"
+                  class="fs-90 text-dark-gray opacity-5 fw-700 ls-minus-4px alt-font"
                 >
-                  <span
-                    class="number position-relative z-index-1 text-dark-gray"
-                    >02</span
-                  >
-                  <div class="box-overlay bg-dark-gray rounded-circle"></div>
+                  Sentir emoção.
                 </div>
               </div>
-              <div class="process-content ps-25px last-paragraph-no-margin">
-                <span
-                  class="d-block fw-500 text-dark-gray fs-22 lh-30 ls-minus-05px w-60 xl-w-90"
-                  >Learn to master <strong>the track.</strong></span
-                >
-              </div>
-            </div>
-          </div>
-          <!-- end process step item -->
-          <!-- start process step item -->
-          <div class="col process-step-style-05 position-relative hover-box">
-            <div class="process-step-item d-flex align-items-center">
-              <div class="process-step-icon-wrap position-relative">
-                <div
-                  class="process-step-icon d-flex justify-content-center align-items-center mx-auto rounded-circle h-90px w-90px bg-white fs-22 box-shadow-medium-bottom fw-600 position-relative"
-                >
-                  <span
-                    class="number position-relative z-index-1 text-dark-gray"
-                    >03</span
-                  >
-                  <div class="box-overlay bg-dark-gray rounded-circle"></div>
+              <!-- end client item -->
+              <!-- start client item -->
+              <div class="swiper-slide">
+                <div class="fs-90 text-dark-gray fw-700 ls-minus-4px alt-font">
+                  Pura adrenalina.
                 </div>
               </div>
-              <div class="process-content ps-25px last-paragraph-no-margin">
-                <span
-                  class="d-block fw-500 text-dark-gray fs-22 lh-30 ls-minus-05px w-80 xl-w-90"
-                  >Drive to success with
-                  <strong>our expert </strong> guidance.</span
-                >
-              </div>
+              <!-- end client item -->
+              <!-- start client item -->
             </div>
           </div>
-          <!-- end process step item -->
         </div>
       </div>
     </section>
     <!-- end section -->
     <!-- start section -->
+    <section>
+      <div class="col-12 text-center">
+        <img src="images2/BANNER-SITE.png" alt="" style="border-radius: 10%" />
+      </div>
+    </section>
+    <!-- end section -->
     <section
-      id="features"
-      class="bg-gradient-very-light-gray position-relative pb-2"
+      class="big-section"
+      style="margin-top: -100px !important; margin-bottom: -100px !important"
     >
+      <div class="container-fluid">
+        <div
+          class="row position-relative clients-style-08"
+          data-anime='{ "translateX": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'
+        >
+          <div
+            class="col swiper text-center feather-shadow"
+            data-slider-options='{ "slidesPerView": 2, "spaceBetween":0, "speed": 6000, "loop": true, "pagination": { "el": ".slider-four-slide-pagination-2", "clickable": false }, "allowTouchMove": false, "autoplay": { "delay":0, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-four-slide-next-2", "prevEl": ".slider-four-slide-prev-2" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 6 }, "992": { "slidesPerView": 4 }, "768": { "slidesPerView": 3 } }, "effect": "slide" }'
+          >
+            <div class="swiper-wrapper marquee-slide">
+              <!-- start client item -->
+              <div class="swiper-slide">
+                <a href="https://jf-cascaisestoril.pt/"
+                  ><img
+                    src="images2/logo/LOGOTIPO CASCAIS ESTORIL.png"
+                    class="h-170px xs-h-170px"
+                    alt=""
+                /></a>
+              </div>
+              <!-- end client item -->
+              <!-- start client item -->
+              <div class="swiper-slide">
+                <a href="https://www.cascais.pt"
+                  ><img
+                    src="images2/logo/LOGOTIPO CASCAIS_.png"
+                    class="h-140px xs-h-140px"
+                    alt=""
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"
+                  ><img
+                    src="images2/logo/LOGOTIPO CASCAIS ACDME.png"
+                    class="h-140px xs-h-140px"
+                    alt=""
+                /></a>
+              </div>
+              <!-- end client item -->
+              <!-- start client item -->
+              <div class="swiper-slide">
+                <a href="#"
+                  ><img
+                    src="images2/logo/LOGOTIPO Gião_.png"
+                    class="h-130px xs-h-130px"
+                    alt=""
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href=" https://www.instagram.com/gordinniditutti/"
+                  target="_blank"
+                  ><img
+                    src="images2/logo/LOGOTIPO GORDINI_.png"
+                    class="h-140px xs-h-140px"
+                    alt=""
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://linksport.pt/home/inicio" target="_blank"
+                  ><img
+                    src="images2/logo/LOGOTIPO Links_.png"
+                    class="h-140px xs-h-140px"
+                    alt=""
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href=" https://www.marinacascais.com/" target="_blank"
+                  ><img
+                    src="images2/logo/LOGOTIPO MARINA.png"
+                    class="h-140px xs-h-140px"
+                    alt=""
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="https://www.soudal.pt/pro/produtos/produtos-de-limpeza-sprays-e-primarios/sprays-tecnicos/01l"
+                  ><img
+                    src="images2/logo/LOGOTIPO OUL.png"
+                    class="h-100px xs-h-100px"
+                    alt=""
+                /></a>
+              </div>
+              <!-- end client item -->
+              <!-- start client item -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- start section -->
+    <section id="features">
       <div
         class="background-position-center-top position-absolute top-0 left-0px w-100 h-100"
         style="background-image: url('images/vertical-line-bg-medium-gray.svg')"
       ></div>
       <div class="container position-relative">
-        <div class="row justify-content-center mb-2">
+        <div class="row justify-content-center">
           <div
-            class="col-auto col-xxl-5 col-lg-7 col-sm-9 d-flex align-items-center justify-content-center"
+            class="col-auto d-flex align-items-center justify-content-center"
           >
-            <h2 class="text-dark-gray fw-800">Who We are</h2>
+            <h2 class="text-dark-gray fw-800">
+              Prepare-se para acelerar e sentir a emoção do karting num dos
+              cenários mais icônicos de Portugal!
+            </h2>
           </div>
         </div>
         <div
-          class="row justify-content-center align-items-center"
+          class="row"
           data-anime='{ "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'
         >
-          <div class="col-12 text-center">
-            <div
-              class="d-inline-block align-middle text-dark-gray fw-500 fs-20 ls-minus-05px"
+          <div class="col-12">
+            <b style="color: black"
+              >O Campeonato de Portugal de Karting Inter-Empresas</b
             >
-              <span class="text-decoration-line-bottom fw-700"
-                >Skyline Racing Academy</span
-              >
-            </div>
-            it is a professional Academy Racing team which provides services to
-            it’s client. Skyline was formed by professional drivers and
-            champions. Skyline provide coaching to kids and adults with
-            different genders on two stroke e.g. Rotax engines. Skyline focus on
-            training the basis of driving go Kart from race line to competition
-            level and basic mechanic level. Our vision to create a place that
-            graduate experienced drivers to be the best in the field with our
-            experience and mechanics we can build a competitive community to
-            represent us and our country in the best manner
+            prepara-se para proporcionar um evento emocionante e repleto de
+            adrenalina na Marina de Cascais.
+            <b style="color: black"
+              >Organizado pela Linksport e por Manuel Gião</b
+            >, em colaboração com a ACDME, este torneio amador de karting
+            promete
+            <b style="color: black">reunir equipas de diversas empresas</b> para
+            um dia de pura competição e convívio.
+            <br />
+            <br />
+            Com a supervisão da Federação Portuguesa de Automobilismo e Karting,
+            todos os participantes devem obter a respetiva licença desportiva,
+            garantindo assim que o evento decorra de acordo com as normas de
+            segurança e regulamentos oficiais da modalidade. Além disso, todas
+            as provas contarão com assistência médica, assegurando o bem-estar
+            de todos os pilotos.
+            <section>
+              <div class="col-12 text-center">
+                <img
+                  src="images2/marina.jpg"
+                  alt=""
+                  style="border-radius: 10%"
+                />
+              </div>
+            </section>
+            <b style="color: black">A Marina de Cascais</b>, conhecida pelo seu
+            ambiente sofisticado e pela sua vista deslumbrante sobre o
+            Atlântico, será o
+            <b style="color: black">palco perfeito para esta prova de karting</b
+            >. O circuito, montado especificamente para o evento, proporcionará
+            desafios técnicos que vão testar as habilidades dos participantes,
+            tornando cada volta uma oportunidade de ultrapassagem e emoção.
+            <br />
+            <br />
+            Para além da competição em si, este campeonato é também uma
+            <b style="color: black"
+              >excelente oportunidade para networking e fortalecimento do
+              espírito de equipa entre empresas</b
+            >. O ambiente descontraído e desportivo promove a interação entre
+            colegas e empresas, criando laços que podem ir muito além da pista.
+            <br />
+            <br />
+            Com um formato pensado para garantir equilíbrio e competitividade, a
+            organização promete um dia repleto de emoções, desde os treinos até
+            à grande final.
+            <b style="color: black"
+              >O evento não será apenas sobre velocidade, mas também sobre
+              estratégia e trabalho de equipa, ingredientes essenciais para uma
+              corrida bem-sucedida.</b
+            >
+            <br />
+            <br />
+            Seja para participar ou simplesmente para assistir e apoiar os
+            colegas, este evento será um momento inesquecível para todos os
+            envolvidos. Prepare-se para acelerar e sentir a emoção do karting
+            num dos cenários mais icônicos de Portugal!
           </div>
         </div>
         <br />
@@ -732,10 +825,10 @@
               class="fs-180 text-gradient-dark-purple-watermelon flex-shrink-0 fw-800 me-35px ls-minus-10px sm-ls-minus-5px"
               data-bottom-top="transform:scale(1.4, 1.4);"
               data-top-bottom="transform:scale(1, 1);"
-              >13</span
+              >15</span
             >
             <h2 class="text-dark-gray fw-1000 ls-minus-2px m-0">
-              Years of Experience
+              Anos de Experiência
             </h2>
           </div>
         </div>
@@ -743,62 +836,9 @@
       <div
         id="particles-02"
         data-particle="true"
-        data-particle-options='{"particles": {"number": {"value": 3,"density": {"enable": true,"value_area": 1000}},"color":{"value":["#fc1111", "#fc4444"]},"shape": {"type": "triangle","stroke":{"width":0,"color":"#000000"}},"opacity": {"value": 0.7,"random": false,"anim": {"enable": false,"speed": 2,"sync": false}},"size": {"value": 7,"random": true,"anim": {"enable": false,"sync": true}},"move": {"enable": true,"speed":2,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'
+        data-particle-options='{"particles": {"number": {"value": 3,"density": {"enable": true,"value_area": 1000}},"color":{"value":["#113933", "#0e7d28"]},"shape": {"type": "triangle","stroke":{"width":0,"color":"#0e7d28"}},"opacity": {"value": 0.7,"random": false,"anim": {"enable": false,"speed": 2,"sync": false}},"size": {"value": 7,"random": true,"anim": {"enable": false,"sync": true}},"move": {"enable": true,"speed":2,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'
         class="position-absolute top-0px left-0px w-100 z-index-minus-1"
       ></div>
-    </section>
-    <!-- end section -->
-
-    <!-- start section -->
-    <section
-      id="technology"
-      class="background-position-center-top position-relative"
-      style="background-image: url('images/vertical-line-bg-medium-gray.svg')"
-    >
-      <div class="container overlap-gap-section"></div>
-    </section>
-    <!-- end section -->
-
-    <!-- start section -->
-    <section
-      class="background-position-center-top pt-0"
-      style="background-image: url('images/vertical-line-bg-medium-gray.svg')"
-    >
-      <div class="container-fluid">
-        <div class="row position-relative">
-          <div
-            class="col swiper swiper-width-auto text-center pb-20px md-pb-20px feather-shadow"
-            data-slider-options='{ "slidesPerView": "auto", "spaceBetween":70, "speed": 14000, "loop": true, "allowTouchMove": false, "autoplay": { "delay":0, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'
-          >
-            <div class="swiper-wrapper marquee-slide">
-              <!-- start client item -->
-              <div class="swiper-slide">
-                <div class="fs-90 text-dark-gray fw-700 ls-minus-4px alt-font">
-                  Driving with excellence.
-                </div>
-              </div>
-              <!-- end client item -->
-              <!-- start client item -->
-              <div class="swiper-slide">
-                <div
-                  class="fs-90 text-dark-gray opacity-5 fw-700 ls-minus-4px alt-font"
-                >
-                  Learn with professionals.
-                </div>
-              </div>
-              <!-- end client item -->
-              <!-- start client item -->
-              <div class="swiper-slide">
-                <div class="fs-90 text-dark-gray fw-700 ls-minus-4px alt-font">
-                  Evolve with us.
-                </div>
-              </div>
-              <!-- end client item -->
-              <!-- start client item -->
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
     <!-- end section -->
     <!-- start section -->
@@ -806,7 +846,7 @@
     <section
       class="overflow-hidden bg-gradient-very-light-gray background-position-center-top background-no-repeat pt-15 sm-pt-50px position-relative"
     >
-      <div class="container-fluid our-gallery" >
+      <div class="container-fluid our-gallery">
         <div class="row justify-content-center">
           <div
             class="col-xl-8 text-center position-relative sm-mb-40px"
@@ -817,7 +857,7 @@
               id="design"
               style="color: #2c3038 !important"
               class="fs-110 md-fs-90 xs-fs-80 text-white fw-700 ls-minus-5px"
-              >Our Gallery</span
+              >A Nossa Galeria</span
             >
           </div>
         </div>
@@ -833,19 +873,23 @@
               <a>
                 <div class="portfolio-box">
                   <div class="portfolio-image bg-dark-gray">
-                    <img src="images2/1.JPG" alt="" />
+                    <img
+                      src="images2/galeria/tvi.jpg"
+                      alt=""
+                      style="max-width: 100%"
+                    />
                     <div
                       class="portfolio-hover d-flex justify-content-center flex-column p-35px"
                     >
                       <div
                         class="alt-font fs-18 text-uppercase text-white fw-500"
                       >
-                        <span>Academy</span>
+                        <span>Corrida Empresas</span>
                       </div>
                       <div
                         class="d-block alt-font fs-14 lh-initial text-uppercase text-white opacity-7"
                       >
-                        <span>branding</span>
+                        <!-- <span>Corrida Empresas</span> -->
                       </div>
                     </div>
                   </div>
@@ -858,20 +902,18 @@
               <a>
                 <div class="portfolio-box">
                   <div class="portfolio-image bg-dark-gray">
-                    <img src="images2/2.JPG" alt="" />
+                    <img src="images2/galeria/2.JPG" alt="" />
                     <div
                       class="portfolio-hover d-flex justify-content-center flex-column p-35px"
                     >
                       <div
                         class="alt-font fs-18 text-uppercase text-white fw-500"
                       >
-                        <span>Tournament</span>
+                        <span>Corrida Empresas</span>
                       </div>
                       <div
                         class="d-block alt-font fs-14 lh-initial text-uppercase text-white opacity-7"
-                      >
-                        <span>design</span>
-                      </div>
+                      ></div>
                     </div>
                   </div>
                 </div>
@@ -883,20 +925,18 @@
               <a>
                 <div class="portfolio-box">
                   <div class="portfolio-image bg-dark-gray">
-                    <img src="images2/3.JPG" alt="" />
+                    <img src="images2/galeria/3.JPG" alt="" />
                     <div
                       class="portfolio-hover d-flex justify-content-center flex-column p-35px"
                     >
                       <div
                         class="alt-font fs-18 text-uppercase text-white fw-500"
                       >
-                        <span>Professional</span>
+                        <span>Corrida Empresas</span>
                       </div>
                       <div
                         class="d-block alt-font fs-14 lh-initial text-uppercase text-white opacity-7"
-                      >
-                        <span>brochure</span>
-                      </div>
+                      ></div>
                     </div>
                   </div>
                 </div>
@@ -915,20 +955,18 @@
               <a>
                 <div class="portfolio-box">
                   <div class="portfolio-image bg-dark-gray">
-                    <img src="images2/4.jpeg" alt="" />
+                    <img src="images2/galeria/4.jpg" alt="" />
                     <div
                       class="portfolio-hover d-flex justify-content-center flex-column p-35px"
                     >
                       <div
                         class="alt-font fs-18 text-uppercase text-white fw-500"
                       >
-                        <span>Driver</span>
+                        <span>Corrida Empresas</span>
                       </div>
                       <div
                         class="d-block alt-font fs-14 lh-initial text-uppercase text-white opacity-7"
-                      >
-                        <span>branding</span>
-                      </div>
+                      ></div>
                     </div>
                   </div>
                 </div>
@@ -940,20 +978,18 @@
               <a>
                 <div class="portfolio-box">
                   <div class="portfolio-image bg-dark-gray">
-                    <img src="images2/5.jpeg" alt="" />
+                    <img src="images2/galeria/5.jpg" alt="" />
                     <div
                       class="portfolio-hover d-flex justify-content-center flex-column p-35px"
                     >
                       <div
                         class="alt-font fs-18 text-uppercase text-white fw-500"
                       >
-                        <span>Jeremy</span>
+                        <span>Corrida Empresas</span>
                       </div>
                       <div
                         class="d-block alt-font fs-14 lh-initial text-uppercase text-white opacity-7"
-                      >
-                        <span>design</span>
-                      </div>
+                      ></div>
                     </div>
                   </div>
                 </div>
@@ -965,20 +1001,18 @@
               <a>
                 <div class="portfolio-box">
                   <div class="portfolio-image bg-dark-gray">
-                    <img src="images2/6.JPG" alt="" />
+                    <img src="images2/galeria/6.JPG" alt="" />
                     <div
                       class="portfolio-hover d-flex justify-content-center flex-column p-35px"
                     >
                       <div
                         class="alt-font fs-18 text-uppercase text-white fw-500"
                       >
-                        <span>Track</span>
+                        <span>Corrida Empresas</span>
                       </div>
                       <div
                         class="d-block alt-font fs-14 lh-initial text-uppercase text-white opacity-7"
-                      >
-                        <span>brochure</span>
-                      </div>
+                      ></div>
                     </div>
                   </div>
                 </div>
@@ -986,134 +1020,6 @@
             </li>
             <!-- end portfolio item -->
           </ul>
-        </div>
-      </div>
-    </section>
-    <!-- end section -->
-    <section class="bg-dark-gray-01 p-35px">
-      <div class="container">
-        <div
-          class="row justify-content-center align-items-center"
-          data-anime='{ "el": "childs", "translateX": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'
-        >
-          <div class="col-lg-1 p-0">
-            <div
-              class="divider-style-03 divider-style-03-01 border-color-transparent-white-very-light md-mb-15px"
-            ></div>
-          </div>
-          <div
-            class="col-xl-7 col-lg-9 position-relative text-center last-paragraph-no-margin"
-          >
-            <i
-              class="line-icon-Trophy align-middle icon-medium me-10px sm-me-0 sm-mb-10px"
-            ></i>
-            <p
-              class="fs-16 fw-600 text-uppercase ls-1px d-inline-block align-middle lh-normal"
-            >
-              Join us for a professional competition
-            </p>
-          </div>
-          <div class="col-lg-1 p-0">
-            <div
-              class="divider-style-03 divider-style-03-01 border-color-transparent-white-very-light md-mt-15px"
-            ></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- start section -->
-
-    <section id="pricing" class="bg-gradient-very-light-gray">
-      <div class="container">
-        <div class="row justify-content-center mb-4">
-          <div
-            class="col-xl-7 col-lg-9 text-center"
-            data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'
-          >
-            <h2 class="h1 fw-800 text-dark-gray ls-minus-3px">
-              Choose the perfect product for you
-            </h2>
-          </div>
-        </div>
-        <div
-          class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 position-relative justify-content-center"
-          data-anime='{ "el": "childs", "rotateZ": [5, 0], "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 200, "easing": "easeOutQuad" }'
-        >
-          <!-- start images box -->
-          <div class="col text-center md-mb-50px">
-            <img  src="images2/p1.png" alt="" />
-            <div class="mt-30px">
-              Professional kart Mechanic and Coaching Support
-
-              <span class="fs-18 fw-700 text-dark-gray mt-10px d-block"
-                >SARS 575</span
-              >
-            </div>
-          </div>
-          <!-- end images box -->
-          <!-- start images box -->
-          <div class="col text-center md-mb-50px">
-            <img  src="images2/p2.png" alt="" />
-            <div class="mt-30px">
-              Professional kart Mechanic and Coaching Support
-
-              <span class="fs-18 fw-700 text-dark-gray mt-10px d-block"
-                >SARS 745</span
-              >
-            </div>
-          </div>
-          <!-- end images box -->
-          <!-- start images box -->
-          <div class="col text-center xs-mb-50px">
-            <img  src="images2/p3.png" alt="" />
-            <div class="mt-30px">
-              Professional kart Mechanic and Coaching Support
-
-              <span class="fs-18 fw-700 text-dark-gray mt-10px d-block"
-                >SARS 2.235</span
-              >
-            </div>
-          </div>
-          <!-- end images box -->
-          <!-- start images box -->
-          <div class="col text-center">
-            <img  src="images2/p4.png" alt="" />
-            <div class="mt-30px">
-              Professional kart Mechanic and Coaching Support
-
-              <span class="fs-18 fw-700 text-dark-gray mt-10px d-block"
-                >SARS 796.38</span
-              >
-            </div>
-          </div>
-          <!-- end images box -->
-        </div>
-        <div
-          class="row justify-content-center mt-6 sm-mt-11"
-          data-anime='{ "el": "childs", "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'
-        >
-          <!-- <div class="col-md-4 p-0">
-                        <span class="bg-dark-gray w-100 fs-30 p-7 sm-p-5 fw-700 text-white text-center d-inline-block">Just $999</span>
-                    </div> -->
-          <div class="col-md-4 p-0">
-            <a
-              href="https://www.amazon.com/"
-              target="_blank"
-              class="btn btn-red w-100 fs-30 p-7 sm-p-5 fw-700 text-uppercase-inherit"
-              >Schedule Now</a
-            >
-          </div>
-          <div class="col-12 mt-30px">
-            <!-- start list style -->
-            <ul
-              class="list-style-05 text-center text-uppercase ls-1px fs-16 fw-500"
-            >
-              <li>Secure</li>
-              <li>Free</li>
-              <li>Contactless delivery</li>
-            </ul>
-            <!-- end list style -->
-          </div>
         </div>
       </div>
     </section>
@@ -1127,7 +1033,7 @@
           <div
             class="col-xl-3 col-lg-4 col-sm-6 order-1 text-center text-sm-start xs-mb-20px"
           >
-            <span class="fs-19 mb-5px d-block">Let's talk</span>
+            <span class="fs-19 mb-5px d-block">Vamos conversar</span>
             <h6 class="fw-700 mb-0 ls-minus-1px">
               <a href="tel:1800222000" class="text-dark-gray"
                 ><a
@@ -1135,7 +1041,7 @@
                   class="btn btn-extra-large btn-dark-gray btn-box-shadow text-transform-none btn-rounded popup-with-form btn-hover-animation-switch"
                 >
                   <span>
-                    <span class="btn-text">CONTACT US</span>
+                    <span class="btn-text">CONTACTA-NOS</span>
                     <span class="btn-icon"
                       ><i class="feather icon-feather-arrow-right"></i
                     ></span>
@@ -1147,34 +1053,28 @@
             </h6>
           </div>
           <div
-            class="col-xl-6 col-lg-4 md-mt-25px order-3 order-lg-2 text-center elements-social social-icon-style-04"
+            class="col-xl-5 col-lg-4 md-mt-25px order-3 order-lg-2 text-center elements-social social-icon-style-04"
           >
             <ul class="large-icon dark">
               <li>
                 <a
                   class="instagram"
-                  href="https://www.instagram.com/skylineracing.sa/"
+                  href="https://www.instagram.com/manuelgiao/"
                   target="_blank"
                   ><i class="fa-brands fa-instagram"></i><span></span
-                ></a>
-              </li>
-              <li>
-                <a
-                  class="facebook"
-                  href="https://www.facebook.com/SkylineRacing.sa"
-                  target="_blank"
-                  ><i class="fa-brands fa-facebook"></i><span></span
                 ></a>
               </li>
             </ul>
           </div>
           <div
-            class="col-xl-3 col-lg-4 col-sm-7 order-2 order-lg-3 text-center text-sm-end"
+            class="col-xl-4 col-lg-4 col-sm-7 order-lg-3 text-center text-sm-end"
           >
-            <span class="fs-19 mb-5px d-block">Get customer care</span>
-            <h6 class="fw-600 mb-0 ls-minus-1px">
-              <a href="mailto:info@domain.com" class="text-dark-gray alt-font"
-                >info@skylineracing.sa</a
+            <span class="fs-19 mb-5px d-block">Atendimento ao cliente</span>
+            <h6 class="fw-200 mb-0 ls-minus-1px">
+              <a
+                href="mailto:manuel.giao@manuelgiao.com"
+                class="text-dark-gray alt-font"
+                >manuel.giao@manuelgiao.com</a
               >
             </h6>
           </div>
@@ -1193,13 +1093,38 @@
             ></div>
             <div class="col-lg-7">
               <div class="p-15 lg-p-10 bg-white">
-                <span class="fs-18 mb-10px">looking for a kart academy?</span>
+                <span class="fs-18 mb-10px">INSCRIÇÕES</span>
                 <h3
                   class="d-inline-block fw-600 text-dark-gray mb-10 ls-minus-1px"
+                  style="color: #113933 !important"
                 >
-                  how we can help you?
+                  Vive a Emoção do Karting na Marina de Cascais!
                 </h3>
-                <form action="email-templates/contact-form.php" method="post">
+                <form
+                  method="POST"
+                  id="contactForm"
+                  name="contactForm"
+                  class="contactForm"
+                >
+                  <div class="position-relative form-group mb-20px">
+                    <div class="select">
+                      <select
+                        class="form-control required border-radius-4px"
+                        name="select"
+                        aria-label="select-doctor"
+                      >
+                        <option value="">
+                          A que prova se pretende candidatar?
+                        </option>
+                        <option value="Corrida Empresas - 31 Maio">
+                          Corrida Empresas - 31 Maio
+                        </option>
+                        <option value="Experiências em pista - 1 Junho">
+                          Experiências em pista - 1 Junho
+                        </option>
+                      </select>
+                    </div>
+                  </div>
                   <div class="position-relative form-group mb-20px">
                     <span class="form-icon"
                       ><i class="bi bi-emoji-smile"></i
@@ -1208,7 +1133,7 @@
                       type="text"
                       name="name"
                       class="form-control required"
-                      placeholder="enter your name*"
+                      placeholder="Insira o seu nome*"
                     />
                   </div>
                   <div class="position-relative form-group mb-20px">
@@ -1219,7 +1144,7 @@
                       type="email"
                       name="email"
                       class="form-control required"
-                      placeholder="enter your email*"
+                      placeholder="Insira o seu email*"
                     />
                   </div>
                   <div class="position-relative form-group mb-20px">
@@ -1229,8 +1154,8 @@
                     <input
                       type="tel"
                       name="phone"
-                      class="form-control"
-                      placeholder="enter your phone"
+                      class="form-control required"
+                      placeholder="Insira o seu número de telefone"
                     />
                   </div>
                   <div class="position-relative form-group form-textarea">
@@ -1238,17 +1163,18 @@
                       ><i class="bi bi-chat-square-dots"></i
                     ></span>
                     <textarea
-                      placeholder="your message"
+                      placeholder="Notas ou dúvidas que tenha"
                       name="comment"
                       class="form-control"
                       rows="3"
                     ></textarea>
                     <input type="hidden" name="redirect" value="" />
                     <button
-                      class="btn btn-medium btn-dark-gray btn-box-shadow btn-round-edge w-100 mt-20px submit"
+                      class="btn btn-medium btn-box-shadow btn-round-edge w-100 mt-20px submit"
                       type="submit"
+                      style="background-color: #113933 !important; color: white"
                     >
-                      send message
+                      INSCREVER-ME
                     </button>
                     <div class="form-results mt-20px d-none"></div>
                   </div>
@@ -1272,17 +1198,18 @@
           <div class="col-lg-7 md-mb-10px text-center text-lg-start">
             <ul class="footer-navbar lh-normal">
               <li class="nav-item">
-                <a href="#overview" class="inner-link nav-link">Overview</a>
+                <a href="index.html" class="inner-link nav-link">Home</a>
               </li>
               <li class="nav-item">
-                <a href="#features" class="inner-link nav-link">About Us</a>
+                <a href="organizacao.html" class="inner-link nav-link"
+                  >Organização</a
+                >
               </li>
 
               <li class="nav-item">
-                <a href="#design" class="inner-link nav-link">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a href="#pricing" class="inner-link nav-link">Pricing</a>
+                <a href="regulamento.html" class="inner-link nav-link"
+                  >Regulamento Prova</a
+                >
               </li>
             </ul>
           </div>
@@ -1291,7 +1218,7 @@
           <div
             class="col-lg-5 last-paragraph-no-margin text-center text-lg-end"
           >
-            <p>&copy; 2024 - Skyline Racing</p>
+            <p>&copy; 2025 - Grande Prémio Cascais</p>
           </div>
           <!-- end footer column -->
         </div>
@@ -1307,6 +1234,68 @@
     </div>
     <!-- end scroll progress -->
     <!-- javascript libraries -->
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+          const name = document.querySelector('input[name="name"]');
+          const email = document.querySelector('input[name="email"]');
+          const phone = document.querySelector('input[name="phone"]');
+          const select = document.querySelector('select[name="select"]');
+          const comment = document.querySelector('textarea[name="comment"]');
+          if (
+            name.classList.contains("is-invalid") ||
+            email.classList.contains("is-invalid") ||
+            phone.classList.contains("is-invalid") ||
+            select.classList.contains("is-invalid")
+          ) {
+            return;
+          }
+          const emailData = {
+            service_id: "service_hi0sixo", // Replace with your EmailJS service ID
+            template_id: "template_2xq1vss", // Replace with your EmailJS template ID
+            user_id: "UIOugouGm2dRIg872", // Replace with your EmailJS user ID
+            template_params: {
+              name: name.value,
+              phone: phone.value,
+              email: email.value,
+              select: select.value,
+              comment: comment.value,
+            },
+          };
+        
+
+          try {
+            const response = await fetch(
+              "https://api.emailjs.com/api/v1.0/email/send",
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(emailData),
+              }
+            );
+            if (response.ok) {
+              myFunction();
+              document.getElementById('contact-form').classList.add('mfp-hide');
+            } else {
+              alert("Erro ao enviar a mensagem. Tente novamente.");
+            }
+          } catch (error) {
+            alert("Erro de rede:", error);
+            alert("Erro ao enviar a mensagem. Tente novamente.");
+          }
+        });
+    </script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("snackbar");
+        x.className = "show";
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+      }
+      </script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/vendors.min.js"></script>
     <!-- slider revolution core javaScript files -->

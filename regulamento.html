@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <title>Grande Prémio - Cascais</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="ThemeZaa" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Prepara-te para um evento de alta adrenalina no Grande Prémio Cascais de Karts! Seja para competir ao mais alto nível ou simplesmente para te divertires com amigos, esta é a oportunidade perfeita para testares as tuas habilidades em pista e sentires a emoção da velocidade."
+    />
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="images2/logo1.png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="images/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="images/apple-touch-icon-114x114.png"
+    />
+    <!-- google fonts preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- slider revolution CSS files -->
+    <link rel="stylesheet" type="text/css" href="revolution/css/settings.css" />
+    <link rel="stylesheet" type="text/css" href="revolution/css/layers.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="revolution/css/navigation.css"
+    />
+    <!-- style sheets and font icons  -->
+    <link rel="stylesheet" href="css/vendors.min.css" />
+    <link rel="stylesheet" href="css/icon.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="demos/product-showcase/product-showcase.css" />
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.slideanims.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.actions.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.layeranimation.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.parallax.min.js"
+    ></script>
+   <style>
+	#snackbar {
+	  visibility: hidden;
+	  min-width: 250px;
+	  margin-left: -125px;
+	  background-color: green;
+	  color: #fff;
+	  text-align: center;
+	  border-radius: 30px;
+	  padding: 16px;
+	  position: fixed;
+	  z-index: 99999;
+	  left: 50%;
+	  right: 50%;
+	  top: 30px;
+	  font-size: 17px;
+	}
+	
+	#snackbar.show {
+	  visibility: visible;
+	  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+	  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+	}
+	
+	@-webkit-keyframes fadein {
+	  from {top: 0; opacity: 0;} 
+	  to {top: 30px; opacity: 1;}
+	}
+	
+	@keyframes fadein {
+	  from {top: 0; opacity: 0;}
+	  to {top: 30px; opacity: 1;}
+	}
+	
+	@-webkit-keyframes fadeout {
+	  from {top: 30px; opacity: 1;} 
+	  to {top: 0; opacity: 0;}
+	}
+	
+	@keyframes fadeout {
+	  from {top: 30px; opacity: 1;}
+	  to {top: 0; opacity: 0;}
+	}
+	</style>
+</head>
+  <body data-mobile-nav-style="classic">
+    <!-- start header -->
+    <header>
+      <!-- start navigation -->
+      <nav
+        class="navbar navbar-expand-lg header-light bg-transparent header-reverse glass-effect"
+        data-header-hover="light"
+      >
+        <div class="container-fluid">
+          <div class="col-auto col-lg-2 me-lg-0 me-auto">
+            <a class="navbar-brand section-link" href="#home">
+              <img src="images2/logo1.png" alt="" class="default-logo" />
+              <img src="images2/logo1.png" alt="" class="alt-logo" />
+              <img src="images2/logo1.png" alt="" class="mobile-logo" />
+            </a>
+          </div>
+          <div class="col-auto menu-order position-static">
+            <button
+              class="navbar-toggler float-start"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-line"></span>
+              <span class="navbar-toggler-line"></span>
+              <span class="navbar-toggler-line"></span>
+              <span class="navbar-toggler-line"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="index.html" class="inner-link nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="organizacao.html" class="inner-link nav-link">Organização</a>
+                </li>
+  
+                <li class="nav-item">
+                  <a href="regulamento.html" class="inner-link nav-link">Regulamento Prova</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-auto col-lg-2 text-end d-sm-flex">
+            <div class="header-icon">
+              <div class="header-button">
+                <a
+                  href="#contact-form"
+                  class="btn btn-very-small left-icon btn-rounded btn-box-shadow btn-switch-text btn-red popup-with-form"
+                >
+                  <span>
+                    <span class="d-none d-xl-inline-block"
+                      ><i class="bi bi-pen fs-16"></i
+                    ></span>
+                    <span class="btn-double-text" data-text="INSCRIÇÕES"
+                      >INSCRIÇÕES</span
+                    >
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- end navigation -->
+    </header>
+    <div id="snackbar">Enviado com sucesso,<br> responderemos o mais rápido possível!</div>
+    <section >
+      <div class="col-12 text-center">
+
+        <img src="images2/BANNER-lettering.png" style="max-width: 700px;  margin-bottom: -100px;" alt="" style="border-radius: 10%" />
+      </div>
+     </section>
+    <!-- start section -->
+    <section
+      id="features"
+    >
+    <br>
+    <br>
+      <div
+        class="background-position-center-top position-absolute top-0 left-0px w-100 h-100"
+        style="background-image: url('images/vertical-line-bg-medium-gray.svg')"
+      ></div>
+      <div class="container position-relative">
+        <div class="row justify-content-center ">
+          <div
+            class="col-auto d-flex align-items-center justify-content-center"
+          >
+            <h2 class="text-dark-gray fw-900" style="color: #11391e;">REGULAMENTO DA PROVA</h2>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div
+          class="row"
+          data-anime='{ "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'
+        >
+          <div class="col-12 ">
+            
+              
+            <b style="color: #11391e">
+              
+              O Campeonato de Portugal de Karting Inter-Empresas</b> é um torneio amador que reúne equipas de diversas empresas para um dia de competição e convívio na Marina de Cascais. Organizado pela Linksport e por Manuel Gião, com o apoio da ACDME, o evento decorre sob a supervisão da Federação Portuguesa de Automobilismo e Karting, garantindo a conformidade com as normas oficiais da modalidade.
+<br><br>
+<b style="color: #11391e">Todos os participantes devem possuir licença desportiva obrigatória</b>, e as provas contarão com assistência médica no local. O circuito, desenhado para proporcionar desafios técnicos, promete momentos de adrenalina e ultrapassagens emocionantes.</div>
+            </div>
+        <br />
+        <br />
+        <div class="row justify-content-center mb-2">
+          <div
+            class="col-auto col-xxl-5 col-lg-7 col-sm-9 d-flex align-items-center justify-content-center"
+          >
+           
+          <div class="header-button" style="width: 200px !important;">
+            <a
+              href="regulamento1.pdf"
+              download
+              class="btn btn-very-small left-icon btn-rounded btn-box-shadow btn-switch-text btn-red"
+            >
+              <span>
+                <span class="d-none d-xl-inline-block"
+                  ><i class="bi bi-download fs-16"></i
+                ></span>
+                <span class="btn-double-text" data-text="INSCRIÇÕES"
+                  >DOWNLOAD REGULAMENTO</span
+                >
+              </span>
+            </a>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="particles-02"
+        data-particle="true"
+        data-particle-options='{"particles": {"number": {"value": 3,"density": {"enable": true,"value_area": 1000}},"color":{"value":["#113933", "#0e7d28"]},"shape": {"type": "triangle","stroke":{"width":0,"color":"#0e7d28"}},"opacity": {"value": 0.7,"random": false,"anim": {"enable": false,"speed": 2,"sync": false}},"size": {"value": 7,"random": true,"anim": {"enable": false,"sync": true}},"move": {"enable": true,"speed":2,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'
+        class="position-absolute top-0px left-0px w-100 z-index-minus-1"
+      ></div>
+    </section>
+    <!-- end section -->
+    <!-- start section -->
+    <section class="py-0">
+      <div class="container">
+        <div
+          class="row pb-50px sm-pb-35px justify-content-center align-items-center"
+        >
+          <div
+            class="col-xl-3 col-lg-4 col-sm-6 order-1 text-center text-sm-start xs-mb-20px"
+          >
+            <span class="fs-19 mb-5px d-block">Vamos conversar</span>
+            <h6 class="fw-700 mb-0 ls-minus-1px">
+              <a href="tel:1800222000" class="text-dark-gray"
+                ><a
+                  href="#contact-form"
+                  class="btn btn-extra-large btn-dark-gray btn-box-shadow text-transform-none btn-rounded popup-with-form btn-hover-animation-switch"
+                >
+                  <span>
+                    <span class="btn-text">CONTACTA-NOS</span>
+                    <span class="btn-icon"
+                      ><i class="feather icon-feather-arrow-right"></i
+                    ></span>
+                    <span class="btn-icon"
+                      ><i class="feather icon-feather-arrow-right"></i
+                    ></span>
+                  </span> </a
+              ></a>
+            </h6>
+          </div>
+          <div
+            class="col-xl-5 col-lg-4 md-mt-25px order-3 order-lg-2 text-center elements-social social-icon-style-04"
+          >
+            <ul class="large-icon dark">
+              <li>
+                <a
+                  class="instagram"
+                  href="https://www.instagram.com/manuelgiao/"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i><span></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-xl-4 col-lg-4 col-sm-7 order-lg-3 text-center text-sm-end"
+          >
+            <span class="fs-19 mb-5px d-block">Atendimento ao cliente</span>
+            <h6 class="fw-200 mb-0 ls-minus-1px">
+              <a href="mailto:manuel.giao@manuelgiao.com" class="text-dark-gray alt-font"
+                >manuel.giao@manuelgiao.com</a
+              >
+            </h6>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <!-- start contact popup -->
+        <div
+          id="contact-form"
+          class="container p-0 contact-form-style-01 position-relative text-center mfp-hide"
+        >
+          <div class="row g-0">
+            <div
+              class="col-lg-5 cover-background md-h-600px xs-h-400px"
+              style="background-image: url('images2/contact.jpg')"
+            ></div>
+            <div class="col-lg-7">
+              <div class="p-15 lg-p-10 bg-white">
+                <span class="fs-18 mb-10px">INSCRIÇÕES</span>
+                <h3
+                  class="d-inline-block fw-600 text-dark-gray mb-10 ls-minus-1px"
+                  style="color: #113933 !important;"
+                >
+                Vive a Emoção do Karting na Marina de Cascais!
+                </h3>
+                <form
+                  method="POST"
+                  id="contactForm"
+                  name="contactForm"
+                  class="contactForm"
+                >
+                  <div class="position-relative form-group mb-20px">
+                    <div class="select">
+                      <select class="form-control required border-radius-4px" name="select" aria-label="select-doctor">
+                          <option value="">A que prova se pretende candidatar?</option>
+                          <option value="Corrida Empresas - 31 Maio">Corrida Empresas - 31 Maio</option>
+                          <option value="Experiências em pista - 1 Junho">Experiências em pista - 1 Junho</option>
+                        
+                      </select>
+                  </div>
+                  </div>
+                  <div class="position-relative form-group mb-20px">
+                    <span class="form-icon"
+                      ><i class="bi bi-emoji-smile"></i
+                    ></span>
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control required"
+                      placeholder="Insira o seu nome*"
+                    />
+                  </div>
+                  <div class="position-relative form-group mb-20px">
+                    <span class="form-icon"
+                      ><i class="bi bi-envelope"></i
+                    ></span>
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control required"
+                      placeholder="Insira o seu email*"
+                    />
+                  </div>
+                  <div class="position-relative form-group mb-20px">
+                    <span class="form-icon"
+                      ><i class="bi bi-telephone-outbound"></i
+                    ></span>
+                    <input
+                      type="tel"
+                      name="phone"
+                      class="form-control required"
+                      placeholder="Insira o seu número de telefone"
+                    />
+                  </div>
+                  <div class="position-relative form-group form-textarea">
+                    <span class="form-icon"
+                      ><i class="bi bi-chat-square-dots"></i
+                    ></span>
+                    <textarea
+                      placeholder="Notas ou dúvidas que tenha"
+                      name="comment"
+                      class="form-control"
+                      rows="3"
+                    ></textarea>
+                    <button
+                      class="btn btn-medium btn-box-shadow btn-round-edge w-100 mt-20px submit"
+                      type="submit"
+                      style="background-color: #113933 !important; color: white;"
+                    >
+                      INSCREVER-ME
+                    </button>
+                    <div class="form-results mt-20px d-none"></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end contact popup -->
+      </div>
+    </section>
+    <!-- end section -->
+
+    <!-- start footer -->
+    <section class="big-section" style="margin-top: -100px !important; margin-bottom: -100px !important;">
+      <div class="container-fluid">
+          <div class="row position-relative clients-style-08" data-anime='{ "translateX": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+              <div class="col swiper text-center feather-shadow" data-slider-options='{ "slidesPerView": 2, "spaceBetween":0, "speed": 6000, "loop": true, "pagination": { "el": ".slider-four-slide-pagination-2", "clickable": false }, "allowTouchMove": false, "autoplay": { "delay":0, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-four-slide-next-2", "prevEl": ".slider-four-slide-prev-2" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 6 }, "992": { "slidesPerView": 4 }, "768": { "slidesPerView": 3 } }, "effect": "slide" }'>
+                  <div class="swiper-wrapper marquee-slide">
+                      <!-- start client item -->
+                      <div class="swiper-slide">
+                          <a href="https://jf-cascaisestoril.pt/"><img src="images2/logo/LOGOTIPO CASCAIS ESTORIL.png" class="h-170px xs-h-170px" alt="" /></a>
+                      </div>
+                      <!-- end client item -->
+                      <!-- start client item -->
+                       <div class="swiper-slide">
+                          <a href="https://www.cascais.pt"><img src="images2/logo/LOGOTIPO CASCAIS_.png" class="h-140px xs-h-140px" alt="" /></a>
+                      </div>
+                      <div class="swiper-slide">
+                          <a href="#"><img src="images2/logo/LOGOTIPO CASCAIS ACDME.png" class="h-140px xs-h-140px" alt="" /></a>
+                      </div>
+                      <!-- end client item -->
+                      <!-- start client item -->
+                      <div class="swiper-slide">
+                          <a href="#"><img src="images2/logo/LOGOTIPO Gião_.png" class="h-130px xs-h-130px" alt="" /></a>
+                      </div>
+                      <div class="swiper-slide">
+                          <a href=" https://www.instagram.com/gordinniditutti/" target="_blank"><img src="images2/logo/LOGOTIPO GORDINI_.png" class="h-140px xs-h-140px" alt="" /></a>
+                      </div>
+                      <div class="swiper-slide">
+                          <a href="https://linksport.pt/home/inicio" target="_blank"><img src="images2/logo/LOGOTIPO Links_.png" class="h-140px xs-h-140px" alt="" /></a>
+                      </div>
+                      <div class="swiper-slide">
+                          <a href=" https://www.marinacascais.com/" target="_blank"><img src="images2/logo/LOGOTIPO MARINA.png" class="h-140px xs-h-140px" alt="" /></a>
+                      </div>
+                      <div class="swiper-slide">
+                          <a href="#"><img src="images2/logo/LOGOTIPO OUL.png" class="h-100px xs-h-100px" alt="" /></a>
+                      </div>
+                      <!-- end client item -->
+                      <!-- start client item -->
+                  </div> 
+              </div>  
+          </div>
+      </div>
+  </section>
+    <footer
+      class="pt-25px pb-25px border-top border-color-extra-medium-gray fs-16"
+    >
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- start footer column -->
+          <div class="col-lg-7 md-mb-10px text-center text-lg-start">
+            <ul class="footer-navbar lh-normal">
+              <li class="nav-item">
+                <a href="index.html" class="inner-link nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="organizacao.html" class="inner-link nav-link">Organização</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="regulamento.html" class="inner-link nav-link">Regulamento Prova</a>
+              </li>
+            </ul>
+          </div>
+          <!-- end footer column -->
+          <!-- start footer column -->
+          <div
+            class="col-lg-5 last-paragraph-no-margin text-center text-lg-end"
+          >
+            <p>&copy; 2025 - Grande Prémio Cascais </p>
+          </div>
+          <!-- end footer column -->
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- start scroll progress -->
+    <div class="scroll-progress d-none d-xxl-block">
+      <a href="#" class="scroll-top" aria-label="scroll">
+        <span class="scroll-text">Scroll</span
+        ><span class="scroll-line"><span class="scroll-point"></span></span>
+      </a>
+    </div>
+    <!-- end scroll progress -->
+    <!-- javascript libraries -->
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+          const name = document.querySelector('input[name="name"]');
+          const email = document.querySelector('input[name="email"]');
+          const phone = document.querySelector('input[name="phone"]');
+          const select = document.querySelector('select[name="select"]');
+          const comment = document.querySelector('textarea[name="comment"]');
+          if (
+            name.classList.contains("is-invalid") ||
+            email.classList.contains("is-invalid") ||
+            phone.classList.contains("is-invalid") ||
+            select.classList.contains("is-invalid")
+          ) {
+            return;
+          }
+          const emailData = {
+            service_id: "service_hi0sixo", // Replace with your EmailJS service ID
+            template_id: "template_2xq1vss", // Replace with your EmailJS template ID
+            user_id: "UIOugouGm2dRIg872", // Replace with your EmailJS user ID
+            template_params: {
+              name: name.value,
+              phone: phone.value,
+              email: email.value,
+              select: select.value,
+              comment: comment.value,
+            },
+          };
+
+          try {
+            const response = await fetch(
+              "https://api.emailjs.com/api/v1.0/email/send",
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(emailData),
+              }
+            );
+            if (response.ok) {
+              myFunction();
+              document.getElementById('contact-form').classList.add('mfp-hide');
+            } else {
+              alert("Erro ao enviar a mensagem. Tente novamente.");
+            }
+          } catch (error) {
+            alert("Erro de rede:", error);
+            alert("Erro ao enviar a mensagem. Tente novamente.");
+          }
+        });
+    </script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("snackbar");
+        x.className = "show";
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+      }
+      </script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/vendors.min.js"></script>
+    <!-- slider revolution core javaScript files -->
+    <script
+      type="text/javascript"
+      src="revolution/js/jquery.themepunch.tools.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/jquery.themepunch.revolution.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.slideanims.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.actions.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.layeranimation.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="revolution/js/extensions/revolution.extension.parallax.min.js"
+    ></script>
+    <!-- slider revolution extension scripts. ONLY NEEDED FOR LOCAL TESTING -->
+    <!-- <script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script> -->
+    <!-- Slider's main "init" script -->
+    <script type="text/javascript">
+      /* https://learn.jquery.com/using-jquery-core/document-ready/ */
+      jQuery(document).ready(function () {
+        /* initialize the slider based on the Slider's ID attribute from the wrapper above */
+        jQuery("#rev_slider_31_1")
+          .show()
+          .revolution({
+            /* options are 'auto', 'fullwidth' or 'fullscreen' */
+            sliderLayout: "fullwidth",
+            /* sets the Slider's default timeline */
+            delay: 9000,
+            /* options that disable autoplay */
+            stopLoop: "off",
+            stopAfterLoops: 0,
+            stopAtSlide: 1,
+            /* Lazy Load options are "all", "smart", "single" and "none" */
+            lazyType: "smart",
+            spinner: "spinner0",
+            responsiveLevels: [1240, 1024, 778, 480],
+            /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
+            gridwidth: [1190, 1024, 778, 480],
+            /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
+            gridheight: [1250, 920, 1000, 650],
+            /* Lazy Load options are "all", "smart", "single" and "none" */
+            lazyType: "none",
+            parallax: {
+              type: "mouse+scroll",
+              origo: "slidercenter",
+              speed: 400,
+              speedbg: 1500,
+              speedls: 1000,
+              levels: [
+                5, 10, 15, 20, 25, 30, 35, 40, 60, 46, -10, -15, -20, -25, -30,
+                55,
+              ],
+            },
+          });
+      });
+    </script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

@@ -2,7 +2,7 @@
  
  Theme Name: Crafto - The Multipurpose HTML5 Template
  Theme URL: https://craftohtml.themezaa.com/
- Description: Elevate your online presence with Crafto - a modern, versatile, multipurpose Bootstrap 5 responsive HTML5, SCSS template using highly creative 48+ ready demos.
+ Description: Prepara-te para um evento de alta adrenalina no Grande Prémio Cascais de Karts! Seja para competir ao mais alto nível ou simplesmente para te divertires com amigos, esta é a oportunidade perfeita para testares as tuas habilidades em pista e sentires a emoção da velocidade.
  Author: ThemeZaa - https://www.themezaa.com/
  Author ThemeForest URL: https://themeforest.net/user/themezaa
  Copyright(c) 2024 themezaa.com
@@ -2063,53 +2063,8 @@
             }
         }
 
-        // Google reCaptcha verify
-        if ( typeof ( grecaptcha ) !== 'undefined' && grecaptcha !== null ) {
-            if (formObj.find('.g-recaptcha').length) {
-                var gResponse = grecaptcha.getResponse();
-                if (!(gResponse.length)) {
-                    error = true;
-                    formObj.find('.g-recaptcha').addClass('is-invalid');
-                }
-            } else if( grecaptchav3 != '' && grecaptchav3 != undefined ) { // For Version 3
-                grecaptcha.ready(function() {
-                  grecaptcha.execute(grecaptchav3, {action: 'submit'}).then(function(token) {
-                  });
-                });
-            }
-        }
-
-        if (!error && actionURL != '' && actionURL != undefined) {
-            _this.addClass('loading');
-            $.ajax({
-                type: 'POST',
-                url: actionURL,
-                data: formObj.serialize(),
-                success: function (result) {
-                    _this.removeClass('loading');
-                    if (redirectVal != '' && redirectVal != undefined) {
-                        window.location.href = redirectVal;
-                    } else {
-                        if (typeof (result) !== 'undefined' && result !== null) {
-                            result = $.parseJSON(result);
-                        }
-                        formObj.find('input[type=text],input[type=url],input[type=email],input[type=tel],input[type=password],textarea').each(function () {
-                            $(this).val('');
-                            $(this).removeClass('is-invalid');
-                        });
-                        formObj.find('.g-recaptcha').removeClass('is-invalid');
-                        formObj.find('input[type=checkbox],input[type=radio]').prop('checked', false);
-                        if (formObj.find('.g-recaptcha').length) {
-                            grecaptcha.reset();
-                        }
-                        resultsObj.removeClass('alert-success').removeClass('alert-danger').hide();
-                        resultsObj.addClass(result.alert).html(result.message);
-                        resultsObj.removeClass('d-none').fadeIn('slow').delay(4000).fadeOut('slow');
-                    }
-                }
-            });
-        }
-        return false;
+       
+        return 
     });
 
     // Contact form validation on blur
