@@ -28,9 +28,10 @@ header .navbar-brand img {
 header .btn.btn-switch-text.btn-very-small > span {
     padding: 10px 30px;
 }
+
 /* text gradient color */
 .text-gradient-dark-purple-watermelon {
-    background: linear-gradient(to right top, rgb(252, 68, 68) 15.923566878980886%, rgb(252, 17, 17) 50.63694267515923%, rgb(120, 2, 2) 99.68152866242038%);
+    background: linear-gradient(to right top, #113933 15.923566878980886%, #145423  50.63694267515923%, #00770c 99.68152866242038%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
