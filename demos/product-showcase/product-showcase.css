@@ -31,7 +31,7 @@ header .btn.btn-switch-text.btn-very-small > span {
 
 /* text gradient color */
 .text-gradient-dark-purple-watermelon {
-    background: linear-gradient(to right top, #113933 15.923566878980886%, #145423  50.63694267515923%, #00770c 99.68152866242038%);
+    background: linear-gradient(to right top, #640207 15.923566878980886%, #f83232  50.63694267515923%, rgb(255, 90, 90) 99.68152866242038%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

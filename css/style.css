@@ -7023,7 +7023,7 @@ header .navbar-brand .alt-logo, header .navbar-brand .mobile-logo {
   width: 0;
 }
 header .navbar-brand img {
-  max-height: 46px;
+  min-height: 45px;
 }
 header .header-top-bar {
   position: fixed;
@@ -10333,7 +10333,7 @@ blockquote footer {
   color: var(--white);
 }
 .btn.btn-red {
-  background-color: #113933;
+  background-color: #cf222a;
   color: var(--white);
 }
 .btn.btn-dark-gray:hover, .btn.btn-dark-gray:active {

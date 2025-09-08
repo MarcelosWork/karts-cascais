@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
   <head>
-    <title>Grande Prémio - Cascais</title>
+    <title>Karting Corporate</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="ThemeZaa" />
@@ -11,7 +11,7 @@
       content="Prepara-te para um evento de alta adrenalina no Grande Prémio Cascais de Karts! Seja para competir ao mais alto nível ou simplesmente para te divertires com amigos, esta é a oportunidade perfeita para testares as tuas habilidades em pista e sentires a emoção da velocidade."
     />
     <!-- favicon icon -->
-    <link rel="shortcut icon" href="images2/logo1.png" />
+    <link rel="shortcut icon" href="images2/favicon.png" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png" />
     <link
       rel="apple-touch-icon"
@@ -56,51 +56,75 @@
       type="text/javascript"
       src="revolution/js/extensions/revolution.extension.parallax.min.js"
     ></script>
-   <style>
-	#snackbar {
-	  visibility: hidden;
-	  min-width: 250px;
-	  margin-left: -125px;
-	  background-color: green;
-	  color: #fff;
-	  text-align: center;
-	  border-radius: 30px;
-	  padding: 16px;
-	  position: fixed;
-	  z-index: 99999;
-	  left: 50%;
-	  right: 50%;
-	  top: 30px;
-	  font-size: 17px;
-	}
-	
-	#snackbar.show {
-	  visibility: visible;
-	  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-	  animation: fadein 0.5s, fadeout 0.5s 2.5s;
-	}
-	
-	@-webkit-keyframes fadein {
-	  from {top: 0; opacity: 0;} 
-	  to {top: 30px; opacity: 1;}
-	}
-	
-	@keyframes fadein {
-	  from {top: 0; opacity: 0;}
-	  to {top: 30px; opacity: 1;}
-	}
-	
-	@-webkit-keyframes fadeout {
-	  from {top: 30px; opacity: 1;} 
-	  to {top: 0; opacity: 0;}
-	}
-	
-	@keyframes fadeout {
-	  from {top: 30px; opacity: 1;}
-	  to {top: 0; opacity: 0;}
-	}
-	</style>
-</head>
+    <style>
+      #snackbar {
+        visibility: hidden;
+        min-width: 250px;
+        margin-left: -125px;
+        background-color: red;
+        color: #fff;
+        text-align: center;
+        border-radius: 30px;
+        padding: 16px;
+        position: fixed;
+        z-index: 99999;
+        left: 50%;
+        right: 50%;
+        top: 30px;
+        font-size: 17px;
+      }
+
+      #snackbar.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+      }
+
+      @-webkit-keyframes fadein {
+        from {
+          top: 0;
+          opacity: 0;
+        }
+        to {
+          top: 30px;
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadein {
+        from {
+          top: 0;
+          opacity: 0;
+        }
+        to {
+          top: 30px;
+          opacity: 1;
+        }
+      }
+
+      @-webkit-keyframes fadeout {
+        from {
+          top: 30px;
+          opacity: 1;
+        }
+        to {
+          top: 0;
+          opacity: 0;
+        }
+      }
+
+      @keyframes fadeout {
+        from {
+          top: 30px;
+          opacity: 1;
+        }
+        to {
+          top: 0;
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
   <body data-mobile-nav-style="classic">
     <!-- start header -->
     <header>
@@ -112,9 +136,9 @@
         <div class="container-fluid">
           <div class="col-auto col-lg-2 me-lg-0 me-auto">
             <a class="navbar-brand section-link" href="#home">
-              <img src="images2/logo1.png" alt="" class="default-logo" />
-              <img src="images2/logo1.png" alt="" class="alt-logo" />
-              <img src="images2/logo1.png" alt="" class="mobile-logo" />
+              <img src="images2/logo-final.png" alt="" class="default-logo" />
+              <img src="images2/logo-final.png" alt="" class="alt-logo" />
+              <img src="images2/logo-final.png" alt="" class="mobile-logo" />
             </a>
           </div>
           <div class="col-auto menu-order position-static">
@@ -137,11 +161,13 @@
                   <a href="index.html" class="inner-link nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a href="organizacao.html" class="inner-link nav-link">Organização</a>
+                  <a href="organizacao.html" class="inner-link nav-link"
+                    >Organização</a
+                  >
                 </li>
-  
+
                 <li class="nav-item">
-                  <a href="regulamento.html" class="inner-link nav-link">Regulamento Prova</a>
+                  <a href="eventos.html" class="inner-link nav-link">Eventos</a>
                 </li>
               </ul>
             </div>
@@ -169,76 +195,127 @@
       </nav>
       <!-- end navigation -->
     </header>
-    <div id="snackbar">Enviado com sucesso,<br> responderemos o mais rápido possível!</div>
-    <section >
-      <div class="col-12 text-center">
+    <div id="snackbar">
+      Enviado com sucesso,<br />
+      responderemos o mais rápido possível!
+    </div>
 
-        <img src="images2/BANNER-lettering.png" style="max-width: 700px;  margin-bottom: -100px;" alt="" style="border-radius: 10%" />
-      </div>
-     </section>
     <!-- start section -->
-    <section
-      id="features"
-    >
-    <br>
-    <br>
+    <section id="features">
+      <br />
+      <br />
       <div
         class="background-position-center-top position-absolute top-0 left-0px w-100 h-100"
         style="background-image: url('images/vertical-line-bg-medium-gray.svg')"
       ></div>
       <div class="container position-relative">
-        <div class="row justify-content-center ">
-          <div
-            class="col-auto d-flex align-items-center justify-content-center"
-          >
-            <h2 class="text-dark-gray fw-900" style="color: #11391e;">REGULAMENTO DA PROVA</h2>
-          </div>
+        <div class="row justify-content-center text-center">
+          <h2 class="text-dark-gray fw-900" style="color: #cf222a;">
+            GP Cascais
+          </h2>
+          <h4 class="text-dark-gray">
+            Onde a adrenalina começa em terra e cruza o mar.
+          </h4>
+          <br>
+          <br>
+          <br>
+          <br>
         </div>
-        <br>
-        <br>
+        <br />
+        <br />
+        <section>
+          <div class="col-12 text-center">
+            <img
+              src="images2/evento1.jpeg"
+              alt=""
+              style="margin-bottom: -30px; margin-top: -160px"
+            />
+          </div>
+        </section>
         <div
           class="row"
           data-anime='{ "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'
         >
-          <div class="col-12 ">
-            
-              
-            <b style="color: #11391e">
-              
-              O Campeonato de Portugal de Karting Inter-Empresas</b> é um torneio amador que reúne equipas de diversas empresas para um dia de competição e convívio na Marina de Cascais. Organizado pela Linksport e por Manuel Gião, com o apoio da ACDME, o evento decorre sob a supervisão da Federação Portuguesa de Automobilismo e Karting, garantindo a conformidade com as normas oficiais da modalidade.
-<br><br>
-<b style="color: #11391e">Todos os participantes devem possuir licença desportiva obrigatória</b>, e as provas contarão com assistência médica no local. O circuito, desenhado para proporcionar desafios técnicos, promete momentos de adrenalina e ultrapassagens emocionantes.</div>
-            </div>
+          <div class="col-12">
+            <b style="color: #cf222a"
+              >A adrenalina regressa à Marina de Cascais com mais uma edição do
+              GP Cascais</b
+            >
+            , entre os dias 19 e 21 de junho de 2026. Um evento único, onde a
+            velocidade encontra a estratégia e onde empresas de diferentes
+            setores se reúnem para viver três dias de pura competição e
+            networking. Organizado pela Karting Corporate, marca de referência
+            em eventos empresariais de karting, o GP Cascais afirma-se como
+            muito mais do que uma corrida: é uma experiência que combina a
+            emoção da pista com a criação de relações duradouras fora dela. Com
+            o lema “Na pista testam-se limites, fora dela criam-se parcerias”,
+            esta prova reúne equipas empresariais num ambiente exclusivo e
+            envolvente, tendo como palco um dos cenários mais emblemáticos de
+            Portugal. O circuito montado especialmente na Marina de Cascais
+            desafia os pilotos com curvas técnicas e retas de velocidade,
+            garantindo espetáculo e emoção em cada volta.
+
+            <br />
+            <br />
+            Durante três dias, os participantes terão oportunidade de:
+            <br />
+            <ul>
+              <li>
+                <b style="color: #cf222a">1. </b>Viver a intensidade de treinos,
+                eliminatórias e finais emocionantes.
+              </li>
+              <li>
+                <b style="color: #cf222a">2. </b>Reforçar o espírito de equipa
+                dentro das suas empresas.
+              </li>
+              <li>
+                <b style="color: #cf222a">3. </b>Partilhar experiências num
+                ambiente descontraído e propício ao networking.
+              </li>
+              <li>
+                <b style="color: #cf222a">4. </b>Criar memórias únicas num dos
+                pontos mais icónicos da costa portuguesa.
+              </li>
+            </ul>
+            O GP Cascais 2026 promete ser uma edição memorável, unindo
+            competição, estratégia e convívio num evento que já se tornou uma
+            referência no calendário empresarial.
+            <br />
+            <br />
+            De 19 a 21 de junho, todos os caminhos vão dar à Marina de Cascais.
+            Prepare-se para acelerar, competir e viver a energia de um evento
+            onde a pista é apenas o início da jornada.
+          </div>
+        </div>
         <br />
         <br />
-        <div class="row justify-content-center mb-2">
+        <!-- <div class="row justify-content-center mb-2">
           <div
             class="col-auto col-xxl-5 col-lg-7 col-sm-9 d-flex align-items-center justify-content-center"
           >
-           
-          <div class="header-button" style="width: 200px !important;">
-            <a
-              href="regulamento1.pdf"
-              download
-              class="btn btn-very-small left-icon btn-rounded btn-box-shadow btn-switch-text btn-red"
-            >
-              <span>
-                <span class="d-none d-xl-inline-block"
-                  ><i class="bi bi-download fs-16"></i
-                ></span>
-                <span class="btn-double-text" data-text="INSCRIÇÕES"
-                  >DOWNLOAD REGULAMENTO</span
-                >
-              </span>
-            </a>
+            <div class="header-button" style="width: 200px !important">
+              <a
+                href="regulamento1.pdf"
+                download
+                class="btn btn-very-small left-icon btn-rounded btn-box-shadow btn-switch-text btn-red"
+              >
+                <span>
+                  <span class="d-none d-xl-inline-block"
+                    ><i class="bi bi-download fs-16"></i
+                  ></span>
+                  <span class="btn-double-text" data-text="INSCRIÇÕES"
+                    >DOWNLOAD REGULAMENTO</span
+                  >
+                </span>
+              </a>
+            </div>
           </div>
-          </div>
-        </div>
+        </div> -->
       </div>
       <div
         id="particles-02"
         data-particle="true"
-        data-particle-options='{"particles": {"number": {"value": 3,"density": {"enable": true,"value_area": 1000}},"color":{"value":["#113933", "#0e7d28"]},"shape": {"type": "triangle","stroke":{"width":0,"color":"#0e7d28"}},"opacity": {"value": 0.7,"random": false,"anim": {"enable": false,"speed": 2,"sync": false}},"size": {"value": 7,"random": true,"anim": {"enable": false,"sync": true}},"move": {"enable": true,"speed":2,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'
+        data-particle-options='{"particles": {"number": {"value": 3,"density": {"enable": true,"value_area": 1000}},"color":{"value":["#cf222a", "#cf222a"]},"shape": {"type": "triangle","stroke":{"width":0,"color":"#cf222a"}},"opacity": {"value": 0.7,"random": false,"anim": {"enable": false,"speed": 2,"sync": false}},"size": {"value": 7,"random": true,"anim": {"enable": false,"sync": true}},"move": {"enable": true,"speed":2,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'
         class="position-absolute top-0px left-0px w-100 z-index-minus-1"
       ></div>
     </section>
@@ -260,7 +337,7 @@
                   class="btn btn-extra-large btn-dark-gray btn-box-shadow text-transform-none btn-rounded popup-with-form btn-hover-animation-switch"
                 >
                   <span>
-                    <span class="btn-text">CONTACTA-NOS</span>
+                    <span class="btn-text">CONTACTE-NOS</span>
                     <span class="btn-icon"
                       ><i class="feather icon-feather-arrow-right"></i
                     ></span>
@@ -278,7 +355,7 @@
               <li>
                 <a
                   class="instagram"
-                  href="https://www.instagram.com/manuelgiao/"
+                  href="https://www.instagram.com/karting_corporate/"
                   target="_blank"
                   ><i class="fa-brands fa-instagram"></i><span></span
                 ></a>
@@ -290,8 +367,10 @@
           >
             <span class="fs-19 mb-5px d-block">Atendimento ao cliente</span>
             <h6 class="fw-200 mb-0 ls-minus-1px">
-              <a href="mailto:manuel.giao@manuelgiao.com" class="text-dark-gray alt-font"
-                >manuel.giao@manuelgiao.com</a
+              <a
+                href="mailto:manuelgiao@kartingcorporate.pt"
+                class="text-dark-gray alt-font"
+                >manuelgiao@kartingcorporate.pt</a
               >
             </h6>
           </div>
@@ -313,9 +392,9 @@
                 <span class="fs-18 mb-10px">INSCRIÇÕES</span>
                 <h3
                   class="d-inline-block fw-600 text-dark-gray mb-10 ls-minus-1px"
-                  style="color: #113933 !important;"
+                  style="color: #cf222a !important"
                 >
-                Vive a Emoção do Karting na Marina de Cascais!
+                  Vive a Emoção do Karting na Marina de Cascais!
                 </h3>
                 <form
                   method="POST"
@@ -325,13 +404,19 @@
                 >
                   <div class="position-relative form-group mb-20px">
                     <div class="select">
-                      <select class="form-control required border-radius-4px" name="select" aria-label="select-doctor">
-                          <option value="">A que prova se pretende candidatar?</option>
-                          <option value="Corrida Empresas - 31 Maio">Corrida Empresas - 31 Maio</option>
-                          <option value="Experiências em pista - 1 Junho">Experiências em pista - 1 Junho</option>
-                        
+                      <select
+                        class="form-control required border-radius-4px"
+                        name="select"
+                        aria-label="select-doctor"
+                      >
+                        <option value="">
+                          A que prova se pretende candidatar?
+                        </option>
+                        <option value="GP Marina de Cascais 19 e 20 Junho 2026">
+                          GP Marina de Cascais 19 e 20 Junho 2026
+                        </option>
                       </select>
-                  </div>
+                    </div>
                   </div>
                   <div class="position-relative form-group mb-20px">
                     <span class="form-icon"
@@ -379,7 +464,7 @@
                     <button
                       class="btn btn-medium btn-box-shadow btn-round-edge w-100 mt-20px submit"
                       type="submit"
-                      style="background-color: #113933 !important; color: white;"
+                      style="background-color: #cf222a !important; color: white"
                     >
                       INSCREVER-ME
                     </button>
@@ -396,47 +481,98 @@
     <!-- end section -->
 
     <!-- start footer -->
-    <section class="big-section" style="margin-top: -100px !important; margin-bottom: -100px !important;">
+    <section
+      class="big-section"
+      style="margin-top: -100px !important; margin-bottom: -100px !important"
+    >
       <div class="container-fluid">
-          <div class="row position-relative clients-style-08" data-anime='{ "translateX": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-              <div class="col swiper text-center feather-shadow" data-slider-options='{ "slidesPerView": 2, "spaceBetween":0, "speed": 6000, "loop": true, "pagination": { "el": ".slider-four-slide-pagination-2", "clickable": false }, "allowTouchMove": false, "autoplay": { "delay":0, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-four-slide-next-2", "prevEl": ".slider-four-slide-prev-2" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 6 }, "992": { "slidesPerView": 4 }, "768": { "slidesPerView": 3 } }, "effect": "slide" }'>
-                  <div class="swiper-wrapper marquee-slide">
-                      <!-- start client item -->
-                      <div class="swiper-slide">
-                          <a href="https://jf-cascaisestoril.pt/"><img src="images2/logo/LOGOTIPO CASCAIS ESTORIL.png" class="h-170px xs-h-170px" alt="" /></a>
-                      </div>
-                      <!-- end client item -->
-                      <!-- start client item -->
-                       <div class="swiper-slide">
-                          <a href="https://www.cascais.pt"><img src="images2/logo/LOGOTIPO CASCAIS_.png" class="h-140px xs-h-140px" alt="" /></a>
-                      </div>
-                      <div class="swiper-slide">
-                          <a href="#"><img src="images2/logo/LOGOTIPO CASCAIS ACDME.png" class="h-140px xs-h-140px" alt="" /></a>
-                      </div>
-                      <!-- end client item -->
-                      <!-- start client item -->
-                      <div class="swiper-slide">
-                          <a href="#"><img src="images2/logo/LOGOTIPO Gião_.png" class="h-130px xs-h-130px" alt="" /></a>
-                      </div>
-                      <div class="swiper-slide">
-                          <a href=" https://www.instagram.com/gordinniditutti/" target="_blank"><img src="images2/logo/LOGOTIPO GORDINI_.png" class="h-140px xs-h-140px" alt="" /></a>
-                      </div>
-                      <div class="swiper-slide">
-                          <a href="https://linksport.pt/home/inicio" target="_blank"><img src="images2/logo/LOGOTIPO Links_.png" class="h-140px xs-h-140px" alt="" /></a>
-                      </div>
-                      <div class="swiper-slide">
-                          <a href=" https://www.marinacascais.com/" target="_blank"><img src="images2/logo/LOGOTIPO MARINA.png" class="h-140px xs-h-140px" alt="" /></a>
-                      </div>
-                      <div class="swiper-slide">
-                          <a href="#"><img src="images2/logo/LOGOTIPO OUL.png" class="h-100px xs-h-100px" alt="" /></a>
-                      </div>
-                      <!-- end client item -->
-                      <!-- start client item -->
-                  </div> 
-              </div>  
+        <div
+          class="row position-relative clients-style-08"
+          data-anime='{ "translateX": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'
+        >
+          <div
+            class="col swiper text-center feather-shadow"
+            data-slider-options='{ "slidesPerView": 2, "spaceBetween":0, "speed": 6000, "loop": true, "pagination": { "el": ".slider-four-slide-pagination-2", "clickable": false }, "allowTouchMove": false, "autoplay": { "delay":0, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-four-slide-next-2", "prevEl": ".slider-four-slide-prev-2" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 6 }, "992": { "slidesPerView": 4 }, "768": { "slidesPerView": 3 } }, "effect": "slide" }'
+          >
+            <div class="swiper-wrapper marquee-slide">
+              <!-- start client item -->
+              <div class="swiper-slide">
+                <a href="https://jf-cascaisestoril.pt/"
+                  ><img
+                    src="images2/logo/LOGOTIPO CASCAIS ESTORIL.png"
+                    class="h-170px xs-h-170px"
+                    alt=""
+                /></a>
+              </div>
+              <!-- end client item -->
+              <!-- start client item -->
+              <div class="swiper-slide">
+                <a href="https://www.cascais.pt"
+                  ><img
+                    src="images2/logo/LOGOTIPO CASCAIS_.png"
+                    class="h-140px xs-h-140px"
+                    alt=""
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"
+                  ><img
+                    src="images2/logo/LOGOTIPO CASCAIS ACDME.png"
+                    class="h-140px xs-h-140px"
+                    alt=""
+                /></a>
+              </div>
+              <!-- end client item -->
+              <!-- start client item -->
+              <div class="swiper-slide">
+                <a href="#"
+                  ><img
+                    src="images2/logo/LOGOTIPO Gião_.png"
+                    class="h-130px xs-h-130px"
+                    alt=""
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href=" https://www.instagram.com/gordinniditutti/"
+                  target="_blank"
+                  ><img
+                    src="images2/logo/LOGOTIPO GORDINI_.png"
+                    class="h-140px xs-h-140px"
+                    alt=""
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://linksport.pt/home/inicio" target="_blank"
+                  ><img
+                    src="images2/logo/LOGOTIPO Links_.png"
+                    class="h-140px xs-h-140px"
+                    alt=""
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href=" https://www.marinacascais.com/" target="_blank"
+                  ><img
+                    src="images2/logo/LOGOTIPO MARINA.png"
+                    class="h-140px xs-h-140px"
+                    alt=""
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"
+                  ><img
+                    src="images2/logo/LOGOTIPO OUL.png"
+                    class="h-100px xs-h-100px"
+                    alt=""
+                /></a>
+              </div>
+              <!-- end client item -->
+              <!-- start client item -->
+            </div>
           </div>
+        </div>
       </div>
-  </section>
+    </section>
     <footer
       class="pt-25px pb-25px border-top border-color-extra-medium-gray fs-16"
     >
@@ -449,11 +585,13 @@
                 <a href="index.html" class="inner-link nav-link">Home</a>
               </li>
               <li class="nav-item">
-                <a href="organizacao.html" class="inner-link nav-link">Organização</a>
+                <a href="organizacao.html" class="inner-link nav-link"
+                  >Organização</a
+                >
               </li>
 
               <li class="nav-item">
-                <a href="regulamento.html" class="inner-link nav-link">Regulamento Prova</a>
+                <a href="eventos.html" class="inner-link nav-link">Eventos</a>
               </li>
             </ul>
           </div>
@@ -462,7 +600,7 @@
           <div
             class="col-lg-5 last-paragraph-no-margin text-center text-lg-end"
           >
-            <p>&copy; 2025 - Grande Prémio Cascais </p>
+            <p>&copy; 2025 - Grande Prémio Cascais</p>
           </div>
           <!-- end footer column -->
         </div>
@@ -522,7 +660,7 @@
             );
             if (response.ok) {
               myFunction();
-              document.getElementById('contact-form').classList.add('mfp-hide');
+              document.getElementById("contact-form").classList.add("mfp-hide");
             } else {
               alert("Erro ao enviar a mensagem. Tente novamente.");
             }
@@ -536,9 +674,11 @@
       function myFunction() {
         var x = document.getElementById("snackbar");
         x.className = "show";
-        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+        setTimeout(function () {
+          x.className = x.className.replace("show", "");
+        }, 3000);
       }
-      </script>
+    </script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/vendors.min.js"></script>
     <!-- slider revolution core javaScript files -->
